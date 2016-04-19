@@ -17,7 +17,7 @@ urlprefix <- "https://www.tripadvisor.com/Restaurant_Review-g186338-d1233703-Rev
 urlsuffix <- "-Bocca_di_Lupo-London_England.html#REVIEWS"
 url <- vector(mode = "character", length=length(urlparam))
 for (k in 1:length(url)) {
-  url[k] = paste(urlprefix,urlparam[k],urlsuffix,sep = "")  # concatenate
+  url[k] = paste(urlprefix,urlparam[k],urlsuffix,sep = "")  # concatenate with prefix and suffix
 }
 
 # create list of dataframes corresponding to pages scraped
